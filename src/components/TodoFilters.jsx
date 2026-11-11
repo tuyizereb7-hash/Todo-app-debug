@@ -1,7 +1,7 @@
 const OPTIONS = [
   ["all", "All", "all"],
-  ["active", "Active", "completed"],
-  ["completed", "Completed", "active"],
+  ["active", "Active", "active"],
+  ["completed", "Completed", "completed"],
 ];
 
 export default function TodoFilters({ filter, counts, onFilter }) {

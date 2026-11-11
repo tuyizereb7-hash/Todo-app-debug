@@ -17,7 +17,7 @@ export default function App() {
     completed: todos.filter((todo) => todo.completed).length,
   };
 
-  const remaining = todos.filter((todo) => todo.completed).length;
+  const remaining = todos.filter((todo) => !todo.completed).length;
 
   const visible = useMemo(() => {
     const needle = query.trim();
